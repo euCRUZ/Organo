@@ -1,12 +1,12 @@
+import Formulario from '../Formulario'
 import './Banner.css'
 
-function Banner() {
+export const Banner = () => {
     // JSX
     return (
         <header className='banner'>
-            <img src="/imagens/banner.png" alt="Banner Principal do Organo"></img>
+            <img src="/imagens/banner.png" alt="Banner Principal do Organo"/>
         </header>
+        
     )
 }
-
-export default Banner
