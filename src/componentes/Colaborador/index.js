@@ -35,7 +35,7 @@ const Colaborador = ({ id, imagem, nome, cargo, corPrimaria, aoDeletar, favorito
                 </div>
             </div>
         </div>
-    );
+    )
 }
 
 export default Colaborador;
