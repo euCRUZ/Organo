@@ -4,8 +4,11 @@ import Banner from './componentes/Banner'
 import Formulario from './componentes/Formulario'
 import Time from './componentes/Time'
 import Footer from './componentes/Footer'
+import Centro from './componentes/Centro'
 
 function App() {
+
+  const [formularioVisivel, setFormularioVisivel] = useState(true)
 
   const [times, setTimes] = useState([
     {
@@ -88,12 +91,19 @@ function App() {
 
   return (
     <div className="App">
-      
       <Banner />
-      <Formulario 
-        cadastrarTime={cadastrarTime}
-        times={times.map(time => time.nome)} 
-        aoCadastrar={aoNovoColaboradorAdicionado}
+
+      {formularioVisivel && (
+        <Formulario 
+          cadastrarTime={cadastrarTime}
+          times={times.map(time => time.nome)} 
+          aoCadastrar={aoNovoColaboradorAdicionado}
+        />
+      )}
+
+      <Centro 
+        formularioVisivel={formularioVisivel}
+        toggleForm={() => setFormularioVisivel(!formularioVisivel)}
       />
 
       <section className='times'>  

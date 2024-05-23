@@ -1,0 +1,20 @@
+.centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    text-align: center;
+  }
+  
+  .centro h2 {
+    color: #6278F7;
+    padding-bottom: 1.25rem;
+    margin-bottom: 6.25rem;
+    font-size: 4rem;
+    border-bottom: 7px solid #6278F7;
+  }
+  
+  .botao-form {
+    padding: 3.125rem;
+  }

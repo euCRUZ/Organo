@@ -1,9 +1,9 @@
 import './Botao.css'
 
-const Botao = (props) => {
+const Botao = ({ children, onClick }) => {
     return (
-        <button className="botao">
-            {props.children}
+        <button className="botao" onClick={onClick}>
+            {children}
         </button>
     )
 }
