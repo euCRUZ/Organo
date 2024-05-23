@@ -17,3 +17,10 @@
     font-weight: 400;
     font-size: 32px;
 }
+
+@media (max-width: 768px) {
+    
+    button {
+        width: 100%;
+    }
+}

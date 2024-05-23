@@ -2,7 +2,8 @@ import './Footer.css'
 
 const Footer = () => {
   return (<footer className="footer">
-        <section>
+    
+        {/* <section>
             <ul>
                 <li>
                     <a href="facebook.com" target="_blank">
@@ -20,13 +21,15 @@ const Footer = () => {
                     </a>
                 </li>
             </ul>
-        </section>
-        <section>
+        </section> */}
+
+        <section className='logo'>
             <img src="/imagens/logo.png" alt="" />
         </section>
+
         <section>
             <p>
-                Desenvolvido por Alura.
+                Desenvolvido por Alura e <a href="https://www.linkedin.com/in/eugiovannicruz/" target="_blank">Giovanni Cruz</a>
             </p>
         </section>
     </footer>)
